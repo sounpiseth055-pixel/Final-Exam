@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Dashboard{% endblock %} {% block content %}
+
+<div class="container-md">
+  <h2 style="margin-bottom: 20px">📊 Dashboard Overview</h2>
+
+  <div class="dashboard-card">
+    <div class="card">
+      <h3>Total User</h3>
+      <p>{{ user_count }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Student</h3>
+      <p>{{ student_count }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Course</h3>
+      <p>{{ course_count }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Lesson</h3>
+      <p>{{ lesson_count }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Employee</h3>
+      <p>{{ employee_count }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Instrcutor</h3>
+      <p>{{ instructor_count}}</p>
+    </div>
+       <div class="card">
+      <h3>Total Category</h3>
+      <p>{{ category_count}}</p>
+    </div>
+       <div class="card">
+      <h3>Total Enrollment</h3>
+      <p>{{ enrollment_count}}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
